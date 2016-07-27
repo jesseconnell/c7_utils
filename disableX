@@ -1,0 +1,6 @@
+#!/bin/bash
+
+systemctl set-default multi-user.target
+rm '/etc/systemd/system/default.target'
+ln -s '/usr/lib/systemd/system/multi-user.target' '/etc/systemd/system/default.target'
+
